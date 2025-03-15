@@ -1,0 +1,3 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit"
+"org.wrongwrong.Benchmark.readByExtension","thrpt",1,4,1492208.591338,264968.853535,"ops/s"
+"org.wrongwrong.Benchmark.readByTypeRef","thrpt",1,4,1621119.345759,178332.672727,"ops/s"
