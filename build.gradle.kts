@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "2.1.10"
+    kotlin("jvm") version "1.9.25"
     id("me.champeau.jmh") version "0.7.2"
 }
 
@@ -14,9 +14,10 @@ repositories {
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
+    jmhImplementation(kotlin("reflect"))
     jmhImplementation("com.fasterxml.jackson.core:jackson-databind:2.19.0-SNAPSHOT")
-    jmhImplementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.19.0-SNAPSHOT")
+    jmhImplementation(files("./jars/jackson-module-kotlin-2.19.0-f4a544.jar"))
+    // jmhImplementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.19.0-SNAPSHOT")
 }
 
 tasks.test {
